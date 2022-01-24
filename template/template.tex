@@ -1,0 +1,21 @@
+\documentclass[10pt,a4paper,twocolumn]{article}
+\usepackage[dvipdfm]{graphicx}
+\usepackage[dvipdfm]{hyperref}
+
+\input{metadata.tex}
+
+\begin{document}
+\twocolumn[
+  \vspace{-3em}
+  \maketitle
+
+  \begin{abstract}
+    \input{abstract.tex}
+  \end{abstract}
+  \vskip 2em
+]
+\input{main.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{mybibTex}
+\end{document}

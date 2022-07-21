@@ -31,7 +31,13 @@ def replacelines(lines):
                     lines[s] = figline
                     break
                 s += 1
-
+        # replace textasciitilde
+        if re.match(".*textasciitilde.*", line):
+            print(line)
+            line = line.replace(
+                r'\textasciitilde{}',
+                '~')
+            print(line)
         lines[i] = line
     return lines
 

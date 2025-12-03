@@ -1,9 +1,9 @@
 # Markdown-to-PDF
 ## Requirements
-- pandoc
-  - pandoc-crossref
-- pLaTeX
-- Python
+- pandoc: 3.8.2.1
+  - pandoc-crossref: 0.3.22a
+- pLaTeX: TeX Live 2025
+- Python: 3.9.8
   
 ## Directories
 ```

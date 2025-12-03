@@ -44,8 +44,8 @@ def replacelines(lines):
 
 def replaceImageImport(line):
     if 'includegraphics' in line:
-        line = line.replace(r'includegraphics{',
-                            r'includegraphics[width=\linewidth]{')
+        line = line.replace(r'includegraphics[',
+                            r'includegraphics[width=\linewidth,')
     if 'begin{figure}' in line:
         line = line.replace('begin{figure}', 'begin{figure}[t]')
     return line
